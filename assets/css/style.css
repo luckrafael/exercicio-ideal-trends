@@ -1,0 +1,231 @@
+/* =============================
+TEXTO
+===============================*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  font-family: "Open Sans", sans-serif;
+  color: #909090;
+}
+
+p,
+li {
+  font-size: 14px;
+}
+
+/* =============================
+GRID
+===============================*/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 894px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* =============================
+HEADER
+===============================*/
+
+.number-phone {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.number-phone p {
+  text-align: right;
+  color: #fff;
+}
+
+.phone-box {
+  background-color: #020085;
+}
+
+/* =============================
+NAVBAR
+===============================*/
+.imagem-marca img {
+  float: left;
+  padding: 10px 0;
+}
+
+.menu-container {
+  display: flex;
+  padding-top: 59px;
+  margin-left: auto;
+}
+
+.menu,
+.sub-menu {
+  list-style: none;
+  padding: 0;
+}
+.sub-menu {
+  background: #020085;
+}
+
+.menu .sub-menu a {
+  color: #fff;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #909090;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.menu li {
+  position: relative;
+}
+.menu > li {
+  float: left;
+}
+
+.menu li:hover > .sub-menu {
+  display: block;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  z-index: 10;
+}
+.sub-menu li:hover {
+  background: #555;
+}
+.sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+/* =============================
+SLIDER
+===============================*/
+.slider {
+  background-color: #b4b4b4;
+}
+
+.nivoSlider {
+  margin-bottom: 0 !important;
+}
+
+/* =============================
+ARTICLE
+===============================*/
+.text {
+  padding: 10px;
+}
+
+ul.text {
+  padding-inline-start: 25px;
+}
+
+.block-rules {
+  padding: 10px 0;
+  margin-bottom: 46px;
+}
+
+.content-rules {
+  display: block;
+  width: 60%;
+}
+
+.img-section {
+  width: 40%;
+}
+
+.img-section img {
+  display: block;
+  margin-left: auto;
+}
+
+/* =============================
+DESTAQUES 
+===============================*/
+.content-100 {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: block;
+  width: 196px;
+  margin-right: 36px;
+  margin-bottom: 28px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+/* =============================
+FOOTER
+===============================*/
+.background-footer {
+  padding-top: 21px;
+  width: 100%;
+  background-color: #454545;
+}
+
+.menu-footer {
+  display: block;
+  margin: 0 auto;
+}
+
+.menu-footer ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.menu-footer li {
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu-footer li a {
+  text-decoration: none;
+}
+
+.menu-footer li a:hover {
+  text-decoration: none;
+}
+
+.menu-footer li a:visited {
+  color: #909090;
+}
+
+.text-footer h5 {
+  display: flex;
+  justify-content: center;
+  margin: 72px 0 47px;
+}
