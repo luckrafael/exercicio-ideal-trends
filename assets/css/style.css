@@ -30,7 +30,7 @@ GRID
 }
 
 .container {
-  width: 894px;
+  max-width: 894px;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -38,7 +38,7 @@ GRID
 }
 
 .container-fluid {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -49,7 +49,6 @@ HEADER
 ===============================*/
 
 .number-phone {
-  width: 100%;
   padding: 5px 0;
 }
 
@@ -62,21 +61,27 @@ HEADER
   background-color: #020085;
 }
 
+@media (max-width: 984px) {
+  .number-phone p {
+    text-align: center;
+  }
+}
+
 /* =============================
 NAVBAR
 ===============================*/
-.imagem-marca img {
+.img-brand {
   float: left;
   padding: 10px 0;
 }
 
-.menu-container {
+.menu {
   display: flex;
   padding-top: 59px;
   margin-left: auto;
+  list-style: none;
 }
 
-.menu,
 .sub-menu {
   list-style: none;
   padding: 0;
@@ -121,6 +126,24 @@ NAVBAR
   left: 100%;
 }
 
+@media (max-width: 984px) {
+  .img-brand {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .img-brand img {
+    float: unset;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .menu {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
+
 /* =============================
 SLIDER
 ===============================*/
@@ -162,10 +185,36 @@ ul.text {
   margin-left: auto;
 }
 
+@media (max-width: 984px) {
+  .content-box {
+    text-align: center;
+  }
+  .content-rules {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-section {
+    width: 100%;
+  }
+
+  .text {
+    list-style: none;
+  }
+  .img-section img {
+    margin: 0 auto;
+  }
+
+  .card p {
+    padding: 5px;
+  }
+}
+
 /* =============================
 DESTAQUES 
 ===============================*/
-.content-100 {
+.content-box {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -186,10 +235,30 @@ DESTAQUES
   margin-right: 0;
 }
 
+@media (max-width: 984px) {
+  .content-100 {
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .card img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card p {
+    text-align: center;
+  }
+}
+
 /* =============================
 FOOTER
 ===============================*/
-.background-footer {
+.bg-footer {
   padding-top: 21px;
   width: 100%;
   background-color: #454545;
